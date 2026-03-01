@@ -1,88 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MyGarden – Legal</title>
-<style>
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-    background-color: #F7F9F7;
-    color: #1F2A24;
-    max-width: 900px;
-    margin: auto;
-    padding: 40px 20px;
-    line-height: 1.6;
-}
-h1, h2 {
-    color: #2E7D32;
-}
-h1 {
-    margin-top: 40px;
-}
-.section {
-    margin-bottom: 40px;
-}
-.footer {
-    margin-top: 60px;
-    font-size: 0.9em;
-    opacity: 0.7;
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyGarden – Terms & Privacy</title>
+  <style>
+    :root{
+      --bg:#F7F9F7;
+      --text:#1F2A24;
+      --primary:#4CAF50;
+      --secondary:#2E7D32;
+      --card:#ffffff;
+      --border: rgba(31,42,36,0.12);
+      --muted: rgba(31,42,36,0.72);
+      --shadow: 0 8px 24px rgba(31,42,36,0.08);
+      --radius: 16px;
+    }
+    body{
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      line-height: 1.65;
+    }
+    .wrap{
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 28px 18px 64px;
+    }
+    header{
+      display:flex;
+      flex-direction:column;
+      gap: 6px;
+      padding: 18px 0 10px;
+    }
+    header h1{
+      margin:0;
+      font-size: 30px;
+      letter-spacing: -0.02em;
+      color: var(--secondary);
+    }
+    header p{
+      margin:0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    nav{
+      display:flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding: 14px 0 18px;
+    }
+    .pill{
+      display:inline-block;
+      text-decoration:none;
+      color: var(--secondary);
+      background: rgba(76,175,80,0.10);
+      border: 1px solid rgba(46,125,50,0.25);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .pill:hover{ background: rgba(76,175,80,0.14); }
+    .card{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px 18px;
+      margin: 16px 0;
+    }
+    h2{
+      margin: 0 0 12px;
+      font-size: 22px;
+      color: var(--secondary);
+    }
+    h3{
+      margin: 18px 0 8px;
+      font-size: 16px;
+      color: var(--text);
+    }
+    p{ margin: 10px 0; }
+    ul{ margin: 8px 0 10px 22px; }
+    li{ margin: 6px 0; }
+    .meta{
+      display:flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-size: 14px;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+    .tag{
+      background: rgba(31,42,36,0.06);
+      border: 1px solid var(--border);
+      padding: 6px 10px;
+      border-radius: 999px;
+    }
+    .footer{
+      margin-top: 34px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+    .hr{
+      height:1px;
+      background: var(--border);
+      margin: 14px 0 0;
+    }
+    code.inline{
+      background: rgba(31,42,36,0.06);
+      border: 1px solid var(--border);
+      padding: 2px 6px;
+      border-radius: 8px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 0.95em;
+    }
+  </style>
 </head>
 <body>
+  <div class="wrap">
+    <header>
+      <h1>MyGarden – Terms of Use & Privacy Policy</h1>
+      <p>These documents apply to the MyGarden mobile application.</p>
+      <div class="meta">
+        <span class="tag"><strong>Last Updated:</strong> March 1, 2026</span>
+        <span class="tag"><strong>Developer:</strong> RWLabs</span>
+      </div>
+    </header>
 
-<h1>MyGarden – Legal</h1>
+    <nav aria-label="On-page navigation">
+      <a class="pill" href="#terms">Terms of Use</a>
+      <a class="pill" href="#privacy">Privacy Policy</a>
+      <a class="pill" href="#contact">Contact</a>
+    </nav>
 
-<div class="section">
-<h2>Terms of Use</h2>
-<p><strong>Last Updated:</strong> INSERT DATE</p>
+    <section id="terms" class="card">
+      <h2>Terms of Use</h2>
 
-<p>Welcome to MyGarden (“App”, “we”, “our”, “us”). By downloading, installing, or using MyGarden, you agree to be bound by these Terms of Use.</p>
+      <h3>1. Agreement to Terms</h3>
+      <p>
+        Welcome to MyGarden (“App”, “we”, “our”, “us”). By downloading, installing, or using MyGarden,
+        you agree to be bound by these Terms of Use. If you do not agree, you must not use the App.
+      </p>
 
-<h3>Plant Care Disclaimer</h3>
-<p>MyGarden provides organisational tools and general gardening guidance only. The App does not provide professional horticultural advice. You are solely responsible for the care and wellbeing of your plants. We are not responsible for plant damage, plant loss, crop failure, or related costs.</p>
+      <h3>2. Description of Service</h3>
+      <p>
+        MyGarden is a gardening tracking and planning application that allows users to:
+      </p>
+      <ul>
+        <li>Record plant information</li>
+        <li>Log activities</li>
+        <li>Track schedules and reminders</li>
+        <li>Store images</li>
+        <li>Organise gardening data</li>
+      </ul>
+      <p>
+        Currently, all gardening data is stored locally on your device. Future versions may introduce optional
+        cloud backup or synchronisation features.
+      </p>
+      <p>
+        We reserve the right to modify, update, suspend, or discontinue any part of the App at any time.
+      </p>
 
-<h3>Subscriptions</h3>
-<p>Premium features are managed exclusively through Google Play. Subscriptions automatically renew unless cancelled through Google Play. We do not process payments or provide refunds. Refunds are subject to Google Play policies.</p>
+      <h3>3. Eligibility</h3>
+      <p>
+        You must be at least 13 years old to use this App. If you are under 18 years old, you must have
+        permission from a parent or legal guardian.
+      </p>
 
-<h3>Data Storage</h3>
-<p>All gardening data is currently stored locally on your device. We do not guarantee recovery of lost data.</p>
+      <h3>4. Plant Care Disclaimer</h3>
+      <p>
+        MyGarden provides organisational tools and general gardening guidance only.
+      </p>
+      <p>
+        The App does not provide professional horticultural, agricultural, environmental, or medical advice.
+      </p>
+      <p>
+        Plant health, growth, survival, and yield depend on many factors beyond our control, including but not limited to:
+      </p>
+      <ul>
+        <li>Climate conditions</li>
+        <li>Soil quality</li>
+        <li>Watering practices</li>
+        <li>Pest and disease management</li>
+        <li>Fertiliser use</li>
+        <li>Sunlight exposure</li>
+        <li>User care decisions</li>
+      </ul>
+      <p>
+        You acknowledge and agree that:
+      </p>
+      <ul>
+        <li>You are solely responsible for the care and wellbeing of your plants.</li>
+        <li>Decisions made using the App are made at your own risk.</li>
+        <li>We are not responsible for plant damage, plant loss, crop failure, or related costs.</li>
+      </ul>
+      <p>The App is a tracking and planning tool only.</p>
 
-<h3>Intellectual Property</h3>
-<p>All app content, design, branding, and code are protected by copyright and intellectual property laws. You may not copy or distribute any part of the App.</p>
+      <h3>5. Subscriptions & Payments</h3>
+      <p>
+        Premium features are offered via subscription through Google Play.
+      </p>
+      <ul>
+        <li>Payments are processed exclusively by Google Play.</li>
+        <li>Subscriptions automatically renew unless cancelled.</li>
+        <li>You must cancel through your Google Play account.</li>
+        <li>We do not process payments directly.</li>
+        <li>We do not provide refunds. Refunds are subject to Google Play policies.</li>
+      </ul>
+      <p>
+        Subscription management: Google Play → Payments &amp; Subscriptions → Subscriptions
+      </p>
 
-<h3>Limitation of Liability</h3>
-<p>The App is provided “as is”. To the maximum extent permitted by law, we are not liable for plant loss, data loss, or indirect damages. Nothing excludes rights under Australian Consumer Law.</p>
-</div>
+      <h3>6. Feature Availability</h3>
+      <p>
+        Certain features may be limited in the free version of the App. We reserve the right to modify which features
+        are available in free and premium tiers at any time.
+      </p>
 
-<div class="section">
-<h2>Privacy Policy</h2>
-<p><strong>Last Updated:</strong> 1 March 2026</p>
+      <h3>7. Data Storage & Backup</h3>
+      <p>
+        All gardening data is currently stored locally on your device. You are responsible for maintaining backups of your device.
+      </p>
+      <p>We do not guarantee recovery of lost data, including where:</p>
+      <ul>
+        <li>The App is uninstalled</li>
+        <li>The device is reset</li>
+        <li>The device is lost or damaged</li>
+        <li>App storage is cleared</li>
+        <li>A software error occurs</li>
+      </ul>
+      <p>
+        Future cloud backup features, if introduced, may be subject to additional terms.
+      </p>
 
-<h3>Local Data Storage</h3>
-<p>All data entered into MyGarden is stored locally on your device. We do not currently collect or transmit personal data.</p>
+      <h3>8. Availability</h3>
+      <p>
+        We do not guarantee that the App will be available at all times. We may modify, suspend, or discontinue the App
+        (or any part of it) at any time without liability.
+      </p>
 
-<h3>Subscription Information</h3>
-<p>Subscriptions are handled by Google Play. We do not receive your payment details.</p>
+      <h3>9. Acceptable Use</h3>
+      <p>You agree not to:</p>
+      <ul>
+        <li>Reverse engineer or decompile the App</li>
+        <li>Attempt to extract source code</li>
+        <li>Circumvent subscription or feature controls</li>
+        <li>Use the App for unlawful purposes</li>
+        <li>Interfere with security features</li>
+      </ul>
 
-<h3>Future Cloud Backup</h3>
-<p>Future versions may offer optional cloud backup and synchronisation. If introduced, this policy will be updated and users will opt in.</p>
+      <h3>10. Intellectual Property</h3>
+      <p>
+        All content in MyGarden, including but not limited to app design, branding, logos, icons, code, database structure,
+        visual layouts, and written content, is the intellectual property of the developer and is protected by copyright and
+        applicable intellectual property laws.
+      </p>
+      <p>
+        You are granted a limited, non-exclusive, non-transferable licence to use the App for personal, non-commercial purposes only.
+        You may not copy, modify, distribute, or create derivative works without prior written permission.
+      </p>
 
-<h3>Children</h3>
-<p>MyGarden is not directed to children under 13.</p>
+      <h3>11. Limitation of Liability</h3>
+      <p>
+        To the maximum extent permitted by law, MyGarden and its developer shall not be liable for:
+      </p>
+      <ul>
+        <li>Loss of plants or crops</li>
+        <li>Loss of data</li>
+        <li>Loss of profits or income</li>
+        <li>Device malfunction</li>
+        <li>Indirect or consequential damages</li>
+        <li>Subscription fees beyond amounts paid in the previous 12 months</li>
+        <li>Any decisions made based on information recorded or displayed in the App</li>
+      </ul>
+      <p>
+        The App is provided “as is” and “as available” without warranties of any kind.
+      </p>
+      <p>
+        Nothing in these Terms excludes rights that cannot be excluded under applicable consumer law, including Australian Consumer Law.
+      </p>
 
-<h3>Contact</h3>
-<p>
-Developer: RWLabs<br>
-Location: Australia<br>
-Email: rw.labs.dev@gmail.com
-</p>
-</div>
+      <h3>12. Governing Law</h3>
+      <p>These Terms are governed by the laws of Australia.</p>
 
-<div class="footer">
-© 2026 MyGarden
-</div>
+      <div class="hr"></div>
+      <p style="margin-top:12px;color:var(--muted);font-size:13px;">
+        Tip: Keep a copy of these Terms for your records. Continued use of the App after changes constitutes acceptance.
+      </p>
+    </section>
 
+    <section id="privacy" class="card">
+      <h2>Privacy Policy</h2>
+
+      <h3>1. Overview</h3>
+      <p>
+        MyGarden respects your privacy. This Privacy Policy explains what information is collected, how it is used,
+        and how it is protected.
+      </p>
+
+      <h3>2. Information Stored Locally on Your Device</h3>
+      <p>The following information is stored only on your device:</p>
+      <ul>
+        <li>Plant names</li>
+        <li>Notes</li>
+        <li>Activity logs</li>
+        <li>Images</li>
+        <li>Custom gardening data</li>
+      </ul>
+      <p>
+        This information is not transmitted to us unless you choose to submit feedback.
+      </p>
+
+      <h3>3. Feedback Submissions</h3>
+      <p>If you submit feedback through the App, we may collect:</p>
+      <ul>
+        <li>Your feedback message</li>
+        <li>An optional email address (if you choose to provide one)</li>
+      </ul>
+      <p>
+        Providing your email address is voluntary. Email addresses are used solely for responding to your enquiry.
+      </p>
+      <p>
+        Email information is retained only for the duration of the communication and is deleted once the support request has been resolved.
+      </p>
+
+      <h3>4. Anonymous Usage Information</h3>
+      <p>
+        To improve the App, we may collect limited anonymous usage data, including:
+      </p>
+      <ul>
+        <li>Number of plants created</li>
+        <li>Number of activities recorded</li>
+        <li>Number of photos stored</li>
+        <li>Device type and operating system version</li>
+      </ul>
+      <p>
+        This data does not directly identify you, is not linked to your name or email, and is used solely for app improvement.
+      </p>
+
+      <h3>5. Data Storage & Processing</h3>
+      <p>
+        Feedback submissions and anonymous usage data are securely transmitted using encrypted connections (HTTPS) and stored using Supabase,
+        a third-party cloud infrastructure provider. Supabase acts as a data processor on our behalf.
+      </p>
+      <p>
+        We do not sell, rent, or trade your personal information.
+      </p>
+
+      <h3>6. Subscriptions</h3>
+      <p>
+        Subscriptions are managed exclusively through Google Play. We do not receive credit card information or full payment details.
+        We may receive limited subscription status information (active/inactive) to enable premium features.
+      </p>
+
+      <h3>7. Data Sharing</h3>
+      <p>
+        We do not sell personal data. We only share information:
+      </p>
+      <ul>
+        <li>With service providers necessary to operate the App (such as Supabase)</li>
+        <li>Where required by law</li>
+      </ul>
+
+      <h3>8. Data Retention</h3>
+      <ul>
+        <li>Local gardening data remains on your device until you delete it.</li>
+        <li>Feedback emails are retained only while support communication is active and are deleted after resolution.</li>
+        <li>Anonymous usage statistics may be retained for product improvement purposes.</li>
+      </ul>
+
+      <h3>9. Data Security</h3>
+      <p>
+        We implement reasonable safeguards to protect information. However, no system can guarantee absolute security.
+      </p>
+
+      <h3>10. Children’s Privacy</h3>
+      <p>
+        MyGarden is not directed at children under 13. We do not knowingly collect personal information from children.
+      </p>
+
+      <h3>11. Your Rights</h3>
+      <p>You may:</p>
+      <ul>
+        <li>Choose not to provide an email address</li>
+        <li>Request deletion of feedback-related personal information</li>
+        <li>Delete local app data by uninstalling the App</li>
+      </ul>
+      <p>
+        To request deletion, contact us at the email below.
+      </p>
+
+      <h3>12. Future Cloud Backup & Sync</h3>
+      <p>
+        Future versions may introduce optional account-based login, cloud backup, or multi-device synchronisation. If implemented,
+        users will opt in, data transmission will be encrypted, and this Privacy Policy will be updated.
+      </p>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>
+        Developer: RWLabs<br />
+        Location: Australia<br />
+        Email: <a href="mailto:rw.labs.dev@gmail.com">rw.labs.dev@gmail.com</a>
+      </p>
+      <p style="color:var(--muted);font-size:13px;">
+        If you request deletion of feedback-related personal information, include enough detail for us to locate the submission
+        (e.g., the email you used and approximate date submitted).
+      </p>
+    </section>
+
+    <div class="footer">
+      © 2026 MyGarden
+    </div>
+  </div>
 </body>
 </html>
